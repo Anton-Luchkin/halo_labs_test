@@ -1,0 +1,100 @@
+@import "../../../style/variables.scss";
+
+.form {
+  position: relative;
+
+  width: 339px;
+  height: 328px;
+
+  margin: 0 auto;
+  padding: 40px 24px;
+  text-align: center;
+
+  background: $hero-bg-color;
+  border-radius: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 422px;
+    height: 352px;
+		padding: 40px 55px;
+  }
+}
+
+.title {
+  margin-bottom: 24px;
+
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+
+  text-transform: capitalize;
+
+  color: $title-color;
+}
+
+.formInput {
+  width: 291px;
+  padding: 12px 24px;
+
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $placeholder-color;
+  background: $white-color;
+
+  border-radius: 40px;
+  border: none;
+  outline: none;
+
+  &:first-of-type {
+    margin-bottom: 16px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 32px;
+  }
+}
+
+.btn {
+  width: 291px;
+  padding: 15px 0px;
+
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: $btn-color;
+
+  border-radius: 30px;
+  border: none;
+  outline: none;
+	cursor: pointer;
+
+	@media screen and (min-width: 1440px) {
+    width: 312px;
+  }
+}
+
+.orangeLeaf {
+  position: absolute;
+  top: -25px;
+  right: -13px;
+}
+
+.purpleLeaf {
+  position: absolute;
+  top: 40px;
+  right: -8px;
+}

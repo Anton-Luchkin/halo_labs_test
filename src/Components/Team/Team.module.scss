@@ -1,0 +1,140 @@
+@import "../../style/variables.scss";
+
+.teamContainer {
+  background-color: $white-color;
+}
+
+.title {
+  margin-bottom: 8px;
+
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+
+  text-align: center;
+  text-transform: capitalize;
+
+  color: $title-color;
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: 16px;
+
+		font-size: 40px;
+		line-height: 140%;
+  }
+}
+
+.text {
+  width: 288px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 175%;
+
+  text-align: center;
+
+  color: $main-color;
+
+  mix-blend-mode: normal;
+  opacity: 0.9;
+
+	@media screen and (min-width: 768px) {
+		width: 352px;
+
+		font-size: 18px;
+		line-height: 178%;
+  }
+	@media screen and (min-width: 1440px) {
+		margin-bottom: 13px;
+  }
+}
+             
+.imgContainer {
+  position: relative;
+  height: 716px;
+  width: 339px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+
+  .firstEmployee {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .firstVector {
+    position: absolute;
+    top: 55px;
+    left: 147px;
+  }
+
+  .secondEmployee {
+    position: absolute;
+    top: 210px;
+    right: 0;
+    z-index: 2;
+  }
+
+  .secondVector {
+    position: absolute;
+    top: 262px;
+    left: 85px;
+  }
+
+  .thirdEmployee {
+    position: absolute;
+    top: 413px;
+    left: 0;
+    z-index: 2;
+  }
+}
+
+.imgContainerBig {
+  position: relative;
+  height: 560px;
+  width: 1120px;
+  margin: 0 auto;
+
+	display: none;
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+  }
+
+  .firstEmployeeBig {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .firstVectorBig {
+    position: absolute;
+    top: 55px;
+    left: 162px;
+  }
+
+  .secondEmployeeBig {
+    position: absolute;
+    top: 105px;
+    right: 393px;
+    z-index: 2;
+  }
+
+  .secondVectorBig {
+    position: absolute;
+    top: 135px;
+    right: 105px;
+  }
+
+  .thirdEmployeeBig {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+}

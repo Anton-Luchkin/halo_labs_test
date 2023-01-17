@@ -1,0 +1,61 @@
+@import "../../../../style/variables.scss";
+
+.nav {
+  margin-bottom: 165px;
+
+	@media screen and (min-width: 768px){
+		margin-top: 40px;
+		margin-bottom: 0;
+		margin-right: 30px;
+	}
+
+	@media screen and (min-width: 1440px) {
+		margin-right: 223px;
+	}
+
+}
+
+.navList{
+	@media screen and (min-width: 768px){
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+}
+
+.navList li {
+  &:not(:last-child) {
+    margin-bottom: 56px;
+
+		@media screen and (min-width: 768px){
+			margin-bottom: 0;
+			margin-right: 50px;
+		}
+
+		@media screen and (min-width: 1440px) {
+			margin-right: 102px;
+		}
+  }
+
+  & a {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+
+    color: $black-color;
+
+    opacity: 0.8;
+
+    &:hover,
+    &:focus {
+      font-weight: 700;
+    }
+
+		@media screen and (min-width: 768px){
+			font-size: 16px;
+			line-height: 200%;
+		}
+  }
+}

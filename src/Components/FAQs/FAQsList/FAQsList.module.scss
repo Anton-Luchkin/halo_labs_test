@@ -1,0 +1,75 @@
+@import "../../../style/variables.scss";
+
+.container {
+  margin: 0 auto;
+
+	@media screen and (min-width: 1440px) {
+		margin: 0;
+  }
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 536px;
+  padding: 32px 0;
+  margin: 0 auto;
+
+  border-bottom: 1px solid rgba(30, 26, 32, 0.2);
+
+  @media screen and (min-width: 768px) {
+    width: 536px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listItemTitle {
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: $main-color;
+
+  mix-blend-mode: normal;
+  opacity: 0.9;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.listItemBtn {
+  padding: 0;
+  margin-left: 35px;
+
+  border-radius: 50%;
+  border: none;
+  line-height: 0;
+}
+
+.listItemText {
+  padding-top: 16px;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 175%;
+
+  color: $main-color;
+
+  mix-blend-mode: normal;
+  opacity: 0.9;
+
+	@media screen and (min-width: 1440px) {
+		font-size: 16px;
+		line-height: 150%;
+  }
+}
